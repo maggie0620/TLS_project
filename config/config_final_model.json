@@ -1,0 +1,7 @@
+{
+    "random_seed": 42,
+    "cancer_type": "all",
+    "fs_method": "mrmr",
+    "model": "RF",
+    "suffix": ""
+}

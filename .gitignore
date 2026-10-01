@@ -1,0 +1,47 @@
+# CNVkit / GISTIC intermediate files
+CNV/
+*.cnr
+*.cns
+*.seg
+
+# Data
+data/
+
+# Generated results
+results/
+tiff_figure/
+
+# Python
+__pycache__/
+catboost_info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# R / RStudio
+R/
+.Rhistory
+.RData
+.Ruserdata
+.Rprofile
+*.rds
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+
+# Environment / secrets
+.env
+.env.*
+
+# Large data files
+*.bam
+*.bai
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.h5
+*.hdf5
+*.tiff

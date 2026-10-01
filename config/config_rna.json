@@ -1,0 +1,10 @@
+{
+    "input_table": "rna_table_full.sqlite",
+    "fs_method": "mrmr",
+    "clustering": false,
+    "min_clusters": 2,
+    "max_clusters": 350,
+    "random_seed": 42,
+    "cancer_type": "PAAD",
+    "suffix": ""
+}

@@ -1,0 +1,8 @@
+{
+    "random_seed": 42,
+    "cancer_type": "PAAD",
+    "fs_method": "mrmr",
+    "model": ["RF", "XGB", "CatBoost"],
+    "scaler_dict": {},
+    "suffix": ""
+}

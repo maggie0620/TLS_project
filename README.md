@@ -1,4 +1,4 @@
-# TLS_project
+# TLS Project
 
 碩士論文: An Ensemble-Based Multi-Omics Feature Selection Framework for Cross-Cancer Identification of Tertiary Lymphoid Structure Signatures
 
@@ -50,11 +50,11 @@ TLS_project/
 │   └── enrichment/                   # TLS signature 的 enrichment 分析
 │       └── enrichment.ipynb
 │
-├── CNV/                 # # CNV 資料與輸出檔案 (配合 CNV 的 preprocess)
+├── CNV/                           # CNV 資料與輸出檔案 (配合 CNV 的 preprocess)
 │
-├── R/                               # R 相關檔案與輸出結果 / 套件環境設定 (配合 RNA、DNAmeth、DNAmut 的 preprocess)
+├── R/                             # R 相關檔案與輸出結果 / 套件環境設定 (配合 RNA、DNAmeth、DNAmut 的 preprocess)
 │
-├── config/                          # 各步驟的參數設定檔（json）
+├── config/                        # 各步驟的參數設定檔（json）
 │   ├── config_rna.json
 │   ├── config_meth.json
 │   ├── config_mut.json
@@ -62,10 +62,10 @@ TLS_project/
 │   ├── config_ensemble.json
 │   └── config_final_model.json
 │
-├── data/                            # 包含各個癌症的 raw matrix / metadata（不上傳 GitHub，見下方說明）
+├── data/                          # 包含各個癌症的 raw matrix / metadata (not uploaded)
 │
-├── results/                         # Pipeline 輸出結果
-│   └── {cancer_type}/                # e.g. PAAD, CHOL, STAD, all
+├── results/                       # Pipeline 輸出結果 (not uploaded)
+│   └── {cancer_type}/               # e.g. PAAD, CHOL, STAD, all
 │       ├── clustering/                # 各步驟執行 log
 │       ├── fig/                       # 儲存圖檔
 │       ├── importance_df/             # ensemble model 所計算的 feature importance
@@ -74,16 +74,14 @@ TLS_project/
 │       ├── table/                     # 各 omics 及最終結果 table（如 rna_table_full.sqlite）
 │       └── common_samples.npy         # 各 omics 的 complete cases
 │
-├── test/                            # 測試用 script (.ipynb)
-├── tiff_figure/                     # 最終輸出圖檔（供發表 / 報告使用）
+├── test/                          # 測試用 script (.ipynb)
+├── tiff_figure/                   # 最終輸出圖檔 (not uploaded)
 │
-├── run_seed.sh                     # 可重複執行多個 random seed 的自動化腳本
-├── script.sh                       # 主要 pipeline 執行入口（依序呼叫上述所有步驟）
-├── workflow.tiff                   # 主要流程圖
-└── TLS.yaml                        # Conda 環境設定檔（環境名稱：TLS）
+├── run_seed.sh                    # 可重複執行多個 random seed 的自動化腳本
+├── script.sh                      # 主要 pipeline 執行入口（依序呼叫上述所有步驟）
+├── workflow.tiff                  # 主要流程圖
+└── TLS.yaml                       # Conda 環境設定檔
 ```
-
-> **注意**：`__pycache__`、`data/`、`results/`、`test/` 下的暫存/輸出內容不應上傳 GitHub，建議統一列入 `.gitignore`（詳見下方「上傳 GitHub 前的注意事項」）。
 
 ---
 
@@ -215,8 +213,8 @@ TLS signature 的 pathway / gene set enrichment 分析。
 {
    "input_table": "meth_table_full.sqlite",
    "fs_method": "mrmr",
-  "cancer_type": "PAAD",
-  "random_seed": 42,
+   "cancer_type": "PAAD",
+   "random_seed": 42,
    "model": ["RF", "XGB", "CatBoost"],
    "scaler_dict": {},
    "suffix": ""

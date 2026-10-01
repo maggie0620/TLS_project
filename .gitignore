@@ -14,6 +14,7 @@ tiff_figure/
 # Python
 __pycache__/
 catboost_info/
+*.ipynb
 
 # Jupyter
 .ipynb_checkpoints/
@@ -34,6 +35,7 @@ R/
 # Environment / secrets
 .env
 .env.*
+*.yml
 
 # Large data files
 *.bam
@@ -45,3 +47,6 @@ R/
 *.h5
 *.hdf5
 *.tiff
+
+# Test / debug files
+test/
